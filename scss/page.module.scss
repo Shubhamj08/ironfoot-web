@@ -1,0 +1,214 @@
+@import "./constant.module.scss";
+
+.section1MainContainer {
+  max-width: $max-screenwidth;
+  margin: 0 auto;
+
+  .mainContainer {
+    padding: $web-overallpadding;
+    margin-top: 80px;
+
+    .container {
+      border-radius: 20px;
+      background: var(--Secondary-80, rgba(66, 28, 21, 0.8));
+      padding: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .content {
+        .heading {
+          color: var(--Schemes-On-Primary, #fff);
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 64px;
+        }
+
+        .subheading {
+          color: var(--Schemes-On-Primary, #fff);
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 64px;
+        }
+
+        .buttonDiv {
+          width: 270px;
+          height: 77px;
+          margin-top: 48px;
+          .button {
+            width: 270px;
+            height: 77px;
+            border-radius: 20px;
+            border: 1px solid var(--Schemes-On-Primary, #fff);
+
+            background: transparent;
+
+            color: var(--Schemes-On-Primary, #fff);
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+
+        .buttonDiv:hover {
+          .button {
+            background-color: #421c15cc;
+            // transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+          }
+        }
+      }
+
+      .image {
+        width: 464px;
+        height: 597px;
+        position: relative;
+      }
+    }
+  }
+}
+
+.section3MainContainer {
+  max-width: $max-screenwidth;
+  margin: 0 auto;
+
+  .mainContainer {
+    padding: $web-overallpadding-top-zero;
+
+    .heading {
+      color: #2e2e2e;
+      text-align: center;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding-bottom: 16px;
+    }
+
+    .subheading {
+      color: #2e2e2e;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding-bottom: 24px;
+    }
+
+    .cardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 32px;
+      column-gap: 24px;
+
+      .card {
+        width: 368px;
+        height: 378px;
+        padding: 11px;
+
+        .number {
+          padding: 7.484px 12.441px 7.806px 12.472px;
+          border-radius: 19.957px;
+          background: #d9d9d9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+
+          p {
+            color: #4e4d4d;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+
+        .image {
+          width: 150px;
+          height: 150px;
+          position: relative;
+          margin: 0 auto;
+        }
+
+        .para {
+          color: #000;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-bottom: 32px;
+        }
+      }
+    }
+  }
+}
+
+.section4MainContainer {
+  max-width: $max-screenwidth;
+  margin: 0 auto;
+
+  .mainContainer {
+    padding: $web-overallpadding-top-zero;
+
+    .heading {
+      color: #2e2e2e;
+      text-align: center;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding-bottom: 24px;
+    }
+
+    .cardContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .card {
+        width: 760px;
+        height: 272px;
+        padding: 32px 110px;
+        border-radius: 20px;
+        background: var(--Card-1, #673127);
+        margin: 0 auto;
+
+        .image {
+          width: 48px;
+          height: 49px;
+          position: relative;
+        }
+
+        .para {
+          color: #fff;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          padding: 8px 0px;
+        }
+
+        .name {
+          color: var(--Schemes-On-Primary, #fff);
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          padding-bottom: 11px;
+        }
+
+        .service {
+          color: var(--Schemes-On-Primary, #fff);
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

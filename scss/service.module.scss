@@ -1,0 +1,133 @@
+@import "./constant.module.scss";
+
+.section1MaxWidth {
+  margin-top: 80px;
+  max-width: $max-screenwidth;
+  margin: 0 auto;
+
+  .container {
+    padding: $web-overallpadding;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+
+    .card {
+      width: 270px;
+      height: 330px;
+      display: flex;
+      background-color: #f4f4f4;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+
+      .image {
+        width: 174px;
+        height: 174px;
+        position: relative;
+        padding-bottom: 19px;
+      }
+
+      p {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #000;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.section2MaxWidth {
+  max-width: $max-screenwidth;
+  margin: 0 auto;
+
+  .container {
+    padding: $web-overallpadding-top-zero;
+
+    .heading {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: #000;
+      text-align: center;
+      padding-bottom: 24px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        width: 70%;
+
+        .faqContainer {
+            padding-bottom: 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .number {
+                width: 74px;
+height: 74px;
+background: var(--Secondary-80, rgba(66, 28, 21, 0.80));
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100%;
+margin-right: 24px;
+
+p{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--Schemes-On-Primary, #FFF);
+
+}
+
+            }
+
+            .faq {
+                width: 80%;
+                h4 {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: var(--Primary-100, #421C15);
+                    padding-bottom: 8px;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: var(--High, var(--Text-Default-Default, #1E1E1E));
+                }
+            }
+        }
+
+        .faqContainer:last-child {
+            padding-bottom: 0px;
+        }
+
+      }
+
+      .image {
+        position: relative;
+        width: 368px;
+        height: 448px;
+      }
+    }
+  }
+}
